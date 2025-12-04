@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // function addTwoNum(num1,num2){
 //     console.log(num1+num2);
     
@@ -78,3 +84,4 @@ function returnSecondValue(getArray){
 }
 console.log(returnSecondValue(myNewArray))
 console.log(returnSecondValue([200,300,400,500]));
+
