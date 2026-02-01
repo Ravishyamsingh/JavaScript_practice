@@ -1,39 +1,22 @@
-const coding = ["js", "ruby", "java", "python", "cpp"]
+/*
+=========================================
+ Program: forEach() in JavaScript
+ Description:
+ - Iterating over arrays
+ - Using forEach with values
+ - Using forEach with objects
+=========================================
+*/
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+// ---------- Example 1: Simple array iteration ----------
 
-// coding.forEach( (item) => {
-//     console.log(item);
-// } )
+const coding = ["js", "ruby", "java", "python", "cpp"];
 
-// function printMe(item){
-//     console.log(item);
-// }
-
-// coding.forEach(printMe)
-
-// coding.forEach( (item, index, arr)=> {
-//     console.log(item, index, arr);
-// } )
-
-const myCoding = [
-    {
-        languageName: "javascript",
-        languageFileName: "js"
-    },
-    {
-        languageName: "java",
-        languageFileName: "java"
-    },
-    {
-        languageName: "python",
-        languageFileName: "py"
-    },
-]
-
-myCoding.forEach( (item) => {
-    
-    console.log(item.languageName);
-} )
+/*
+ forEach() basics:
+ - item  → current element
+ - index → position of element
+ - array → complete array
+*/
+coding.forEach((item, index, array) => {
+    c
