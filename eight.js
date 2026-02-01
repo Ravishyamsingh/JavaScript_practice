@@ -1,15 +1,37 @@
-const myNums = [1, 2, 3]
+/*
+=========================================
+ Program: Array reduce() Example
+ Description:
+ - Demonstrates how reduce() works
+ - Calculates sum of numbers
+ - Calculates total price from shopping cart
+=========================================
+*/
 
-// const myTotal = myNums.reduce(function (acc, currval) {
-//     console.log(`acc: ${acc} and currval: ${currval}`);
-//     return acc + currval
-// }, 0)
+// ---------- Example 1: Sum of numbers ----------
 
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+// Input array
+const myNums = [1, 2, 3];
 
-console.log(myTotal);
+/*
+ reduce() explanation:
+ - acc  → accumulator (stores running result)
+ - curr → current value from array
+ - 0    → initial value of accumulator
+*/
+const myTotal = myNums.reduce((acc, curr) => {
+    // acc starts from 0
+    // curr takes values: 1, 2, 3
+    return acc + curr;
+}, 0);
+
+// Output result
+console.log("Sum of numbers:", myTotal);
 
 
+// ---------- Example 2: Shopping cart total ----------
+
+// Shopping cart array (objects)
 const shoppingCart = [
     {
         itemName: "js course",
@@ -26,9 +48,18 @@ const shoppingCart = [
     {
         itemName: "data science course",
         price: 12999
-    },
-]
+    }
+];
 
-const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+/*
+ reduce() to calculate total price:
+ - acc starts from 0
+ - item represents each object in array
+ - item.price is added to accumulator
+*/
+const priceToPay = shoppingCart.reduce((acc, item) => {
+    return acc + item.price;
+}, 0);
 
-console.log(priceToPay);
+// Final output
+console.log("Total price to pay:", priceToPay);
