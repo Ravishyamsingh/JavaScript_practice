@@ -6,7 +6,6 @@ const user ={
         console.log(`${this.username} , welcome to website`);
         // console.log(this);
         
-        
     }
 }
 // user.welcomeMessage()
@@ -46,3 +45,4 @@ chai()
 const addTwo =(num1, num2) => ({username:"ravijee"})
 
 console.log(addTwo(3,5));
+
