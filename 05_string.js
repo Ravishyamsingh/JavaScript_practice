@@ -1,7 +1,3 @@
-
-
-
-
 const name="shyamsingh"
 const repoCount=50;
 //console.log(name+repoCount+"word");
@@ -47,5 +43,6 @@ console.log("To kaise h aap".search('kaise'));
 let college="kalasalingam"
 console.log(college.slice(0,4));
 console.log(college.substring(0,college.length));
+
 
 
