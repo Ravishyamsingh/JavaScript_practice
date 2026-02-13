@@ -3,12 +3,13 @@
 
 // object literals
 
+
 const mySym = Symbol("key1")
 
 
 const JsUser = {
     name: "Ravi",
-    "full name": "Ravi Shyam",
+    "full name": "Ravi Shyam Singh",
     [mySym]: "mykey1",
     age: 18,
     location: "Jaipur",
@@ -50,3 +51,4 @@ const user1={
 }
 console.log(user1.name)
 console.log(typeof mySyms);
+
